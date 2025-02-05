@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>stopwatch</Title>
+    <link rel="stylesheet" href="css/new style.css">
+    <link rel="stylesheet" href="css/clockheader.css">
+  </head>
+  <Body>
+    <div class="header">
+      <div class="clock-container">
+        <div class="date" id="date">Loading...</div>
+        <div class="clock"></div>
+        <div>
+          <p class="time-segment" id="timeDisplay">00:00:00:00</p>
+        </div>
+  
+  
+        <div class="buttons">
+          <button class="Start_Stop_button" id="startStopButton">Start</button>
+          <button class="lap_button" id ="lapButton"disabled>Lap</button>
+          <button class="Reset_button" id="resetButton" disabled>Reset</button>
+        </div>
+        <h2>Lap Times</h2>
+        <ul id="lapList"></ul>
+        <button class="Export-button" id="exportButton" disabled>Export</button>
+      </div>
+
+    </div>
+    
+    
+    <script src="java/script.js"></script>
+  </Body>
+</html>
+
+
+

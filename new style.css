@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(#16213e, #1a1a2e, #16213e);
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            overflow: scroll;
+        }
+
+        .clock-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .clock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;    
+        }
+
+        .time-segment {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            min-width: 100px;
+            color: #00ff9f;
+            font-size: 4rem;
+            font-weight: bold;
+            position:relative;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .time-segment:hover {
+            transform: scale(1.05);
+        }
+
+        .segment-label {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 100%;
+            color: #4eb8dd;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .date {
+            margin: 20px;
+            color: #4eb8dd;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            .time-segment {
+                font-size: 2.5rem;
+                padding: 10px;
+                min-width: 60px;
+            }
+            .clock-container {
+                padding: 20px;
+            }
+        }
+
+        .buttons{
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          gap:20px;
+          color: #1a1a2e;
+        }
+
+        .Start_Stop_button,
+        .lap_button,
+        .Reset_button,
+        .Export-button{
+          font-family: 'Orbitron';
+          font-size: 15px;
+          height:40px;
+          padding: 10px;
+          border:none;
+          background-color:aliceblue;
+          border-radius: 6px;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.2s ease;
+        }
+        .Start_Stop_button:hover,
+        .lap_button:hover,
+        .Reset_button:hover,
+        .Export-button:hover{
+          transform: scale(1.05);
+        }
+        .Start_Stop_button:active,
+        .lap_button:active,
+        .Reset_button:active,
+        .Export-button:active{
+          background-color: rgb(182, 186, 197);
+        }
